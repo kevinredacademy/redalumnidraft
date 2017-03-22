@@ -1,0 +1,433 @@
+/*------------------------FontFace------------------*/
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('assets/webfontkit-20170318-141506/roboto-regular-webfont.eot');
+    src: url('assets/webfontkit-20170318-141506/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/webfontkit-20170318-141506/roboto-regular-webfont.woff2') format('woff2'),
+         url('assets/webfontkit-20170318-141506/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+/*webfontkit-20170318-141506/roboto-regular-webfont
+webfontkit-20170318-141506/roboto-light-webfont*/
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('assets/webfontkit-20170318-141506/roboto-light-webfont.eot');
+    src: url('assets/webfontkit-20170318-141506/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/webfontkit-20170318-141506/roboto-light-webfont.woff2') format('woff2'),
+         url('assets/webfontkit-20170318-141506/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*----------------------------Fonts--------------------*/
+
+html {
+  width: 100%;
+  max-width: 1400px;
+  font-family: robotoregular;
+}
+
+p,
+h3 {
+  font-family: robotolight;
+}
+
+/*----------------------------Header--------------------*/
+
+nav {
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+  background-color: white;
+  color:white;
+}
+
+.nav-logo {
+  margin-bottom:10px;
+}
+
+.nav-menu {
+  font-size:70px;
+  margin-top: 20px;
+}
+
+.hamburger {
+  width: 100px;
+  color: red;
+}
+.hamburger-display{
+  display: none;
+}
+
+nav ul {
+  position: absolute;
+  list-style-type: none; 
+  margin-left: -170px;
+  margin-top: 20px;
+  background-color:red;
+  font-size: 50px;
+}
+
+nav li {
+  padding: 10px;
+  color:white;
+  font-family: robotoregular;
+}
+
+nav img{
+  width:50%;
+  margin-top:40px;
+  margin-left:17px;
+}
+
+header {
+background-image:
+  linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+  url("assets/images/alumni-heroimage.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height: 700px;
+width: 100%;
+color:white;
+}
+
+.header-heading {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size:100px;
+}
+
+.header-texts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-texts p {
+  font-size:40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-button {
+  border: 0;
+  padding: 15px;
+  margin-top: 10px;
+  background-color:#E2231A;
+  font-size: 40px;
+  color:white;
+  border-radius: 15px;
+  transition: all 0.5s ease 0.5s;
+}
+
+button:hover {
+  background-color: salmon;
+  font-size: 100%;
+}
+
+
+
+
+/*-----------------------SectionStart-ArticleAbout-------------------*/
+
+.homepage-categories {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size:40px;
+  line-height:100px;
+}
+
+hr {
+  border-top: 5px solid #E2231A;
+  width: 120px;
+}
+
+/*-----------------------Article-Community-------------------*/
+
+.homepage-community-article {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.community-background {
+background-image:
+  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+  url("assets/images/red-community.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height: 500px;
+width: 100%;
+color:white;
+font-size:50px;
+}
+
+.community-background h2{
+  text-align: center;
+  font-size:95px;
+}
+
+.community-paragraph {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top:70px;
+}
+
+.community-paragraph p {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.community-button {
+  border: 0;
+  padding: 15px;
+  margin-bottom:20px;
+  background-color:#E2231A;
+  font-size: 45px;
+  color:white;
+  border-radius: 15px;
+  transition: all 0.5s ease 0.5s;
+  width: 30%;
+}
+
+/*-----------------------Article-Mentorship-------------------*/
+
+.mentorship-background {
+background-image:
+  linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+  url("assets/images/red-mentor.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height: 700px;
+width: 100%;
+color:white;
+}
+
+.mentorship-background h2 {
+  text-align:center;
+  margin-top:30px;
+  font-size: 100px;
+}
+
+.mentorship-paragraph {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top:70px;
+}
+
+.mentorship-paragraph p {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mentorship-button {
+  border: 0;
+  padding: 15px;
+  margin-bottom:20px;
+  background-color:#E2231A;
+  font-size: 45px;
+  color:white;
+  border-radius: 15px;
+  transition: all 0.5s ease 0.5s;
+  width: 30%;
+}
+
+/*-----------------------Article-Portfolio-------------------*/
+
+.portfolio-background {
+background-image:
+  linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+  url("assets/images/red-portfolio.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height: 700px;
+width: 100%;
+color:white;
+}
+
+.portfolio-background h2 {
+  text-align:center;
+  margin-top:30px;
+  font-size: 100px;
+}
+
+.portfolio-paragraph {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top:70px;
+}
+
+.portfolio-paragraph p {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolio-button {
+  border: 0;
+  padding: 15px;
+  margin-bottom:40px;
+  background-color:#E2231A;
+  font-size: 45px;
+  color:white;
+  border-radius: 15px;
+  transition: all 0.5s ease 0.5s;
+  width: 30%;
+}
+
+
+/*-----------------------Article-Testimonial-------------------*/
+
+.homepage-testimonial-article {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-heading {
+  text-align: center;
+}
+
+.alumni-headshot {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.testimonial-heading {
+  font-size:90px;
+}
+
+.alumni-comment {
+  font-size:40px;
+  text-align: center;
+  margin-top:20px;
+}
+
+i {
+  font-size:35px;
+}
+
+/*-----------------------Article-Newsletter-------------------*/
+
+.homepage-newsletter-article {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.newsletter-heading {
+  font-size:90px;
+}
+
+.newsletter-paragraph {
+  font-size:26px;
+  margin-top: 50px;
+}
+
+.newsletter-paragraph p {
+  margin-bottom: 40px;
+}
+
+.newsletter-button {
+  border: 0;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color:#E2231A;
+  font-size: 40px;
+  color:white;
+  border-radius: 10px;
+  transition: all 0.5s ease 0.5s;
+}
+
+
+/*---------------------Article-Location----------------------*/
+
+.homepage-location-article {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 90px;
+  margin-bottom: 40px;
+}
+
+.homepage-location-article p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.homepage-googlemap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.color-change {
+  color: red;
+}
+
+/*------------------------EndFooter----------------------*/
+
+
+footer {
+  background-color:#515151;
+  color: white;
+  line-height: 40px;
+  font-size: 35px;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-paragraph {
+  margin-top: 25px;
+}
+
+.footer-paragraph p {
+  display: flex;
+  padding: 10px;
+}
+
+.homepage-footer-copyright,
+.homepage-footer-contact {
+  margin-bottom: 15px;
+  margin-top:20px;
+}
+
+.homepage-footer-address {
+  color:grey;
+}
+
+.homepage-socialmedia {
+  margin-top: 30px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+
+/*---------------------MobileResponsive-------------------*/
+
+@media screen and (min-width: 600px) and (max-width:1140px) {
+}
+
